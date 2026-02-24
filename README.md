@@ -21,4 +21,4 @@ This project is a web-based AI chatbot that interacts with users in real-time us
 - **API Integration:** Fetch API / REST API  
 
 ---
-![Screenshot]()
+![Screenshot](Screenshot%20.png)
