@@ -1,0 +1,180 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('IMAGE/image1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #e0e0e0;
+    transition: background 0.5s, color 0.5s;
+}
+
+/* Chat Container */
+.chat-container {
+    width: 90%;
+    max-width: 800px;
+    background: rgba(20, 20, 20, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 20px;
+}
+.login-container h2{
+    color: #e2da4a;
+}
+
+/* Chat Header */
+.chat-header {
+    background: linear-gradient(45deg, #4A90E2, #4a50e2);
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Chat Messages */
+.chat-messages {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+    max-height: 400px;
+    scroll-behavior: smooth;
+}
+
+/* User and Bot Messages */
+.user-message {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: right;
+}
+
+.bot-message {
+    background: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: left;
+}
+
+/* Input Container */
+.chat-input-container {
+    display: flex;
+    padding: 15px;
+    background: #333;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Input Field */
+#user-input {
+    flex-grow: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #222;
+    color: #e0e0e0;
+    outline: none;
+}
+
+/* Buttons */
+button {
+    background: #4A90E2;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, background-color 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: #3A7BC8;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #222;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4A90E2;
+    border-radius: 4px;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background: url('IMAGE/image2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+/* Login Container */
+.login-container {
+            background: white;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 800px;
+        }
+        .login-container input {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-container button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+/* Hidden Elements */
+.hidden {
+    display: none;
+}
+
+/* Emoji Picker */
+.emoji-picker {
+    display: flex;
+    flex-wrap: wrap;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 200px;
+    margin: 10px auto;
+}
+
+.emoji-picker span {
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 5px;
+    transition: transform 0.2s;
+}
+
+.emoji-picker span:hover {
+    transform: scale(1.2);
+}

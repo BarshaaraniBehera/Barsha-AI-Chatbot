@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbot</title>
+    <link rel="stylesheet" href="ai.css">
+</head>
+<body>
+
+    <!-- Login Page -->
+    <div id="login-container" class="login-container">
+        <h2>USER LOGIN</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button id="login-button">Login</button>
+        <p id="login-error" class="hidden">Invalid username or password.</p>
+    </div>
+
+    <!-- Chat Container -->
+    <div id="chat-container" class="chat-container hidden">
+        <div class="chat-header">
+            <h2>AI WISE TALK</h2>
+            <button id="theme-toggle">🌙</button>
+        </div>
+        
+        <!-- Chat History -->
+        <div id="chat-messages" class="chat-messages"></div>
+
+        <!-- Chat Input -->
+        <div class="chat-input-container">
+            <button id="voice-input">🎤</button>
+            <input type="text" id="user-input" placeholder="Type your message...">
+            <button id="emoji-button">😊</button>
+            <button id="send-button">Send</button>
+        </div>
+
+        <!-- Emoji Picker -->
+        
+        <button id="clear-chat">Clear Chat</button>
+    </div>
+
+    <script src="ai.js"></script>
+</body>
+</html>
